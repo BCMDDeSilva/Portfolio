@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import profileImage from '../../image/WhatsApp Image 2026-06-12 at 17.51.18.jpeg';
 
 function Home() {
@@ -12,8 +13,8 @@ function Home() {
       </p>
       
       <div style={{ marginTop: '2rem' }}>
-        <a href="/projects" className="btn" style={{ marginRight: '1rem' }}>View My Work</a>
-        <a href="/contact" className="btn" style={{ backgroundColor: '#21262d', color: '#c9d1d9', borderColor: '#30363d' }}>Contact Me</a>
+        <Link to="/projects" className="btn" style={{ marginRight: '1rem' }}>View My Work</Link>
+        <Link to="/contact" className="btn" style={{ backgroundColor: '#21262d', color: '#c9d1d9', borderColor: '#30363d' }}>Contact Me</Link>
       </div>
     </div>
   );
